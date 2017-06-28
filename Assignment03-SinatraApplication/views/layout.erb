@@ -1,0 +1,14 @@
+<!-- Layout design for the web app-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><%= @title || "Student Info" %>
+</title><meta charset="utf-8" />
+<link href="/styles.css" rel="stylesheet" />
+</head><body>
+<header>
+<h1>Student Information System</h1>
+<%= erb :nav %>
+</header><section>
+<%= yield %>
+</section></body></html>

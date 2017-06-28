@@ -1,0 +1,7 @@
+<h1><%= ::Temple::Utils.escape_html((@comment.id)) %>
+</h1><p>Name: <%= ::Temple::Utils.escape_html((@comment.name)) %></p>
+<p>USER COMMENT: <%= ::Temple::Utils.escape_html((@comment.user_comment)) %></p>
+<p>Time Created:  <%= ::Temple::Utils.escape_html((@comment.created_at)) %></p>
+<p><a href="/comments">back to Comment index</a></p>
+<form action="/comments/<%= ::Temple::Utils.escape_html((@comment.id)) %>" method="POST">
+</form>
